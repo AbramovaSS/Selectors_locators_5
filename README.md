@@ -6,6 +6,8 @@
 
 ````
 .products-grid div[data-name]
+````
+````
 //div[contains(@class, 'products-grid')]//div[@data-name]
 ````
 
@@ -13,6 +15,8 @@
 
 ````
 .products-grid div[data-price]
+````
+````
 //div[contains(@class, 'products-grid')]//div[@data-price]
 ````
 
@@ -20,13 +24,19 @@
 
 ````
 .products-grid .product-card:has([data-price="25"]) [data-name]
+````
+
+````
 //div[@class='product-card' and @data-price='25']/h4
 ````
 
 4. Цена товара с названием "Стакан"
 
 ````
-..products-grid .product-card:has([data-name="Стакан"]) [data-price]
+.products-grid .product-card:has([data-name="Стакан"]) [data-price]
+````
+
+````
 //div[@class="product-card" and @data-name="Стакан"]/div[contains(text(), "₽")]
 ````
 
@@ -34,13 +44,18 @@
 
 ````
 #cart-items .cart-item
+````
+
+````
 //div[@id="cart-items"]/div[@class="cart-item"]
 ````
 
 6. Кнопка корзины
 
 ````
-#open-cart-btn
 //*[@id="open-cart-btn"]
+````
 
+````
+//*[@id="open-cart-btn"]
 ````
